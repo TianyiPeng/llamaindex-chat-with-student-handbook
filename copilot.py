@@ -1,4 +1,4 @@
-
+import streamlit as st
 from openai import OpenAI
 from llama_index.core import VectorStoreIndex, SimpleDirectoryReader, Settings
 from llama_index.embeddings.huggingface import HuggingFaceEmbedding
@@ -95,3 +95,4 @@ if __name__ == "__main__":
 
         messages.append({"role": "user", "content": question})
         messages.append({"role": "assistant", "content": answer})
+
